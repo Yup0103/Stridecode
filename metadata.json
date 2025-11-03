@@ -1,0 +1,5 @@
+{
+  "name": "StrideCode - Walking Companion for Developers",
+  "description": "StrideCode is a walking app built for software engineers and IT workers, turning movement into a debuggable, gamified system. It features sprint-synced routes, developer-centric audio, and a unique 'PR for Steps' viral loop to make walking the new rubber duck debugging.",
+  "requestFramePermissions": []
+}

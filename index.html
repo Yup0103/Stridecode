@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StrideCode</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              mono: ['Source Code Pro', 'monospace'],
+            },
+            colors: {
+              'dark-bg': '#111111',
+              'dark-card': '#1C1C1E',
+              'dark-border': '#333333',
+              'accent-cyan': '#00A9B0',
+              'accent-green': '#3FB950',
+              'light-text': '#E5E7EB',
+              'medium-text': '#9CA3AF',
+              'dark-text': '#6B7280',
+            },
+            keyframes: {
+              'fade-in': {
+                '0%': { opacity: '0' },
+                '100%': { opacity: '1' },
+              },
+              'pulse-glow': {
+                '0%, 100%': { transform: 'scale(1)', boxShadow: '0 0 0px 0px rgba(0, 169, 176, 0.4)' },
+                '50%': { transform: 'scale(1.05)', boxShadow: '0 0 12px 2px rgba(0, 169, 176, 0.6)' },
+              }
+            },
+            animation: {
+              'fade-in': 'fade-in 0.5s ease-in-out',
+              'pulse-glow': 'pulse-glow 3s ease-in-out infinite',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+        -webkit-tap-highlight-color: transparent;
+      }
+      .animate-fade-in {
+        animation: fade-in 0.3s ease-in-out;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+  }
+}
+</script>
+</head>
+  <body class="bg-dark-bg text-light-text antialiased animate-fade-in">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
